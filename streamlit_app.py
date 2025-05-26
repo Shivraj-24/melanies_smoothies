@@ -29,7 +29,7 @@ if ingredients_list:
             session.sql(my_insert_stmt).collect()
             st.success('Your Smoothie is ordered, ' + name_on_order.title() + '!', icon="✅")
         except Exception as e:
-            st.write(f'Something went wrong. Try again later! - {e}')
+            st.write(f'Something went wrong. Try again later!')
         
 
 
